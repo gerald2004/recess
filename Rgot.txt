@@ -1,0 +1,12 @@
+#welcome to the R 
+
+How are you doing 
+
+result = matrix(cells, nrow=3, ncol=3, byrow=FALSE, dimnames=list(rnames, cnames))
+
+print(result)
+
+# converting a 3 by 3 array into a vector
+
+as.vector(result)
+

@@ -5,7 +5,7 @@ mydata
 head(mydata)
 #summary of my data am handling in R
 
-
+ #R is interesting indata 
 summary(mydata)
 #convert amount to a factor to indicate that it has been treated one category var 
 #mydata$ Amount <- factor(mydata$ Amount)

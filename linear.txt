@@ -3,7 +3,7 @@ mydata <-read.csv("health.csv")
 mydata
 # view the first few rows of the data
 head(mydata)
-#summary of my data am handling
+#summary of my data am handling in R
 
 
 summary(mydata)

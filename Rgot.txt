@@ -10,3 +10,8 @@ print(result)
 
 as.vector(result)
 
+#R programming is sweet
+
+
+We learnt about github such as how to push, pull and clone   
+

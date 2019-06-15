@@ -1,0 +1,30 @@
+print(getwd())
+mydata <-read.csv("health.csv")
+mydata
+# view the first few rows of the data
+head(mydata)
+#summary of my data am handling
+
+
+summary(mydata)
+#convert amount to a factor to indicate that it has been treated one category var 
+#mydata$ Amount <- factor(mydata$ Amount)
+
+# using the glm (generalized linear model) function
+mylogit <- glm(Supplier ~ Amount, data = mydata, family = "binomial")
+mylogit
+
+#3D Pie chart for the above logistic linear regression
+
+#First install the package plotrix for pie chart
+
+install.packages("plotrix")
+# picking data from a dataframe
+library(plotrix)
+# Fetching data for a specific column using a table function
+mytable <- table(mydata$Expense.Area)
+lbls <- paste(names(mytable), "\n", mytable, sep="")
+#x= round(mydata$Expense.Area/sum(mydata$Expense.Area)*100)
+lbls <- paste(lbls,"%",sep="")
+pie3D(mytable,labels =lbls, radius=0.9,explode=0.1,main="3D PIE FOR EXPENSES AREA",
+      col=c("brown","#ddaa00","pink","#dd00dd"))
